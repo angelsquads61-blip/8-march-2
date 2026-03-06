@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>С 8 Марта — сюрприз</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<audio id="bgAudio" loop>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<div class="scene">
+
+<div class="edge top-left">
+
+<svg viewBox="0 0 220 220">
+<defs>
+<linearGradient id="g1" x1="0" x2="1">
+<stop offset="0" stop-color="#ffd3e4"/>
+<stop offset="1" stop-color="#ff9fc7"/>
+</linearGradient>
+</defs>
+
+<path d="M0 80 C40 10 150 10 220 0 L220 0 L0 0 Z" fill="url(#g1)"/>
+
+</svg>
+
+</div>
+
+
+<div class="edge bottom-right">
+
+<svg viewBox="0 0 220 220">
+
+<defs>
+<linearGradient id="g2" x1="0" x2="1">
+<stop offset="0" stop-color="#ffd36b"/>
+<stop offset="1" stop-color="#ff6fa3"/>
+</linearGradient>
+</defs>
+
+<path d="M220 140 C180 210 70 210 0 220 L220 220 L220 140 Z" fill="url(#g2)"/>
+
+</svg>
+
+</div>
+
+
+<div class="petal-layer"></div>
+
+
+<main class="card-wrap">
+
+<header class="header">
+
+<h1>С 8 Марта 💐</h1>
+
+<p class="sub">
+Сотри карточку — и увидишь сюрприз.
+</p>
+
+</header>
+
+
+<section class="scratch-card">
+
+<div class="frame">
+
+<div class="reveal" id="revealText">
+Завтра тебя ждёт подарок 🎁
+</div>
+
+<canvas id="scratch" width="420" height="240"></canvas>
+
+<div class="shimmer"></div>
+
+</div>
+
+</section>
+
+
+<div class="controls">
+
+<button id="toggleMusic" class="btn music" aria-pressed="false">
+
+<svg viewBox="0 0 24 24" class="icon play">
+<path d="M5 3v18l15-9z" fill="currentColor"/>
+</svg>
+
+<svg viewBox="0 0 24 24" class="icon pause">
+<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/>
+</svg>
+
+</button>
+
+
+<button id="resetBtn" class="btn">
+Стереть ещё раз
+</button>
+
+</div>
+
+
+<footer class="footer">
+
+С любовью и теплом ❤️
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
